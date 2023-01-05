@@ -1,0 +1,17 @@
+{
+  "name": "sparkrentals-data-generator",
+  "version": "1.0.0",
+  "description": "Data Generator",
+  "main": "autoGen.js",
+  "scripts": {
+    "dataGenerator": "node autoGen.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "hat": "^0.0.3",
+    "mongodb": "^4.12.1"
+  }
+}
