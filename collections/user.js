@@ -58,6 +58,7 @@ const users = {
             email: "benjamin.sven@gmail.com",
             password: pass1,
             balance: 225.5,
+            autoGen: true
         };
     
         let user22 = {
@@ -69,6 +70,7 @@ const users = {
             email: "kalle.bertan@hotmail.se",
             password: pass2,
             balance: 145,
+            autoGen: true
         };
     
         let user33 = {
@@ -80,6 +82,7 @@ const users = {
             email: "zelda.samba@gmail.com",
             password: pass3,
             balance: 765,
+            autoGen: true
         };
     
         let history1 = {
@@ -90,7 +93,7 @@ const users = {
             startPosition: ["50", "62"],
             endPosition: ["30", "12"],
             totalMin: 5,
-            totalPrice: 20
+            totalPrice: 20,
         }
     
         let history2 = {
@@ -101,7 +104,7 @@ const users = {
             startPosition: ["780", "32"],
             endPosition: ["60", "32"],
             totalMin: 25,
-            totalPrice: 145
+            totalPrice: 145,
         }
     
         let history3 = {
@@ -112,7 +115,7 @@ const users = {
             startPosition: ["220", "552"],
             endPosition: ["440", "622"],
             totalMin: 45,
-            totalPrice: 225
+            totalPrice: 225,
         }
     
         let client2 = new MongoClient(mongoURI);
@@ -333,8 +336,9 @@ const users = {
                         endPosition: [getRandomInt(400), getRandomInt(500)],
                         totalMin: getRandomInt(60),
                         totalPrice: getRandomInt(300)
-                    }   
-                    ]
+                    }
+                    ],
+                    autoGen: true
                 };
                 await users_collection.insertOne(userField);
             }
