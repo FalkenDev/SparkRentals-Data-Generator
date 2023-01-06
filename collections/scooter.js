@@ -26,7 +26,7 @@ const scooters = {
             battery: 42,
             speed: 25,
             status: "In use",
-            log: {}
+            log: []
         };
 
         let stock2 = {
@@ -49,7 +49,7 @@ const scooters = {
             battery: 100,
             speed: 30,
             status: "In use",
-            log: {}
+            log: []
         };
 
         let stock3 = {
@@ -64,7 +64,7 @@ const scooters = {
             battery: 87,
             speed: 0,
             status: "Available",
-            log: {}
+            log: []
         };
     
         let karl1 = {
@@ -79,7 +79,7 @@ const scooters = {
             battery: 22,
             speed: 0,
             status: "Maintenance",
-            log: {}
+            log: []
         };
     
         let karl2 = {
@@ -94,7 +94,7 @@ const scooters = {
             battery: 100,
             speed: 0,
             status: "Unavailable",
-            log: {}
+            log: []
         };
 
         let karl3 = {
@@ -109,7 +109,7 @@ const scooters = {
             battery: 72,
             speed: 0,
             status: "Available",
-            log: {}
+            log: []
         };
 
         let karl4 = {
@@ -124,7 +124,7 @@ const scooters = {
             battery: 98,
             speed: 0,
             status: "Available",
-            log: {}
+            log: []
         };
 
         let karl5 = {
@@ -139,7 +139,7 @@ const scooters = {
             battery: 4,
             speed: 0,
             status: "Off",
-            log: {}
+            log: []
         };
 
         let karl6 = {
@@ -182,7 +182,7 @@ const scooters = {
             battery: 42,
             speed: 0,
             status: "Maintenance",
-            log: {}
+            log: []
         };
 
         let halm2 = {
@@ -197,7 +197,7 @@ const scooters = {
             battery: 42,
             speed: 0,
             status: "Available",
-            log: {}
+            log: []
         };
 
         let halm3 = {
@@ -220,7 +220,7 @@ const scooters = {
             battery: 42,
             speed: 24,
             status: "In use",
-            log: {}
+            log: []
         };
     
         let client = new MongoClient(mongoURI);
