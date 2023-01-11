@@ -94,6 +94,7 @@ const users = {
             endPosition: {latitude: "50", longitude: "62" },
             totalMin: 5,
             totalPrice: 20,
+            distance: 20
         }
     
         let history2 = {
@@ -105,6 +106,7 @@ const users = {
             endPosition: {latitude: "50", longitude: "62" },
             totalMin: 25,
             totalPrice: 145,
+            distance: 12
         }
     
         let history3 = {
@@ -116,6 +118,7 @@ const users = {
             endPosition: {latitude: "50", longitude: "62" },
             totalMin: 45,
             totalPrice: 225,
+            distance: 16
         }
     
         let client2 = new MongoClient(mongoURI);
